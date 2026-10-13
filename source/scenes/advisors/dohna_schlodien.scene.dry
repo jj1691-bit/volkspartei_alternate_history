@@ -7,6 +7,27 @@ view-if: dohna_schlodien_advisor = 1
 
 = Alexander zu Dohna-Schlodien
 
-WIP. Not active
+Dohna-Schlodien is the professor of criminal law at the University of Bonn since 1926 [? if dvp_leader == "Dohna-Schlodien": and the leader of our party?]. 
 
 - @root: Return to main
+- @coalition
+- @toleration
+
+@coalition
+title: Negotiating with the Coalition
+subtitle: Dohna-Schlodien can improve our relationships with our coalition partners.
+choose-if: advisor_action_timer <= 0 and dvp_in_government = 1
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not dvp_in_government: The <span style="color: var(--dvp-color);">**[+ dvp_name +]**</span> is not in government. ?]
+on-arrival: advisor_action_timer = 6; coalition_dissent -= 1 if spd_in_government = 1 and coalition_dissent > 0; z_relation += 5; ddp_relation += 5; spd_relation += 5
+
+We have improved our relations with the Z, [+ ddp_name +], and SPD, and reduced tensions with the coalition.
+
+
+@toleration
+title: Defending Toleration
+subtitle: Dohna-Schlodien supports the toleration arrangement with the bourgeois parties.
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?][? if not dvp_toleration: The <span style="color: var(--dvp-color);">**[+ dvp_name +]**</span> is not in toleration. ?]
+choose-if: spd_in_government = 0 and spd_toleration = 1 and advisor_action_timer = 0
+on-arrival: advisor_action_timer = 6; nationalist_dissent -= 8; industrialist_dissent -= 5;
+
+We have reduced dissent among the anti-toleration factions. 
