@@ -7,6 +7,26 @@ new-page: true
 
 = Heinrich Imbusch
 
-WIP. Not active
+Imbusch is a former left-wing member of the <span style="color: #000000;">**Center Party**</span>.
 
 - @root: Return to main
+- @catholics_rally
+- @improve_relations_center
+
+@catholics_rally
+title: Organizing Catholics
+subtitle: Being a devoted Catholic and former <span style="color: #000000;">Center</span> member, he's particularly effective in winning votes from the <span style="color: #000000;">**Center**</span>.
+choose-if: advisor_action_timer == 0 
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; pro_republic += 4; catholics_dvp += 6*(1-dissent)
+
+Imbusch helps us rally the Catholic demographic away from the <span style="color: #000000;">**Center Party**</span>.
+
+@improve_relations_center
+title: <span style="color: #000000;">**Center Party**</span> relations
+subtitle: Improve our relations with the <span style="color: #000000;">**Center Party**</span>.
+choose-if: advisor_action_timer <= 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; z_relation += 5*(1 - dissent); z_relation += 4*(1 - dissent) if z_leader = "Stegerwald"
+
+Imbusch has used his connections to improve our standing with the <span style="color: #000000;">**Center Party**</span>.
