@@ -7,6 +7,15 @@ new-page: true
 
 = Franz Behrens
 
-WIP. Not active
+Franz Behrens is a former member of the labor wing of the <span style="color: #3F7BC1;">**DNVP**</span>. 
+
 
 - @root: Return to main
+- @organizing
+
+@organizing
+title: Organizing workers
+subtitle: Improve our standing among the workers.
+choose-if: advisor_action_timer <= 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; workers_dvp += 1*(1-dissent); new_middle_dvp += 3*(1-dissent); labor_strength += 2
