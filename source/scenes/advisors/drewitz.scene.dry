@@ -7,6 +7,14 @@ new-page: true
 
 = Hermann Drewitz
 
-WIP. Not active
+Drewitz is a former member of thc <span style="color: #B8996F;">**WP**</span>.
 
 - @root: Return to main
+- @negotiate_minor_parties
+
+@negotiate_minor_parties
+title: Negotiate with small bourgeois parties
+subtitle: As a former member of the  <span style="color: #B8996F;">**WP**</span>, Bauser can help imporove our relationships with the other minor bourgeois parties. 
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; wp_relation += 4*(1-dissent); dbp_relation += 4*(1-dissent); cnblp_relation += 4*(1-dissent)
