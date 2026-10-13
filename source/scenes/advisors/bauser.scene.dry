@@ -7,6 +7,30 @@ new-page: true
 
 = Adolf Bauser
 
-WIP. Not active
+Adolf Bauser was a prominent member of the <span style="color: #0075EB;">**VRP**</span> and a member of the Reichstag since 1932.
 
+
+- @negotiate_minor_parties
+- @lower_interest_rates
 - @root: Return to main
+
+@negotiate_minor_parties
+title: Negotiate with small bourgeois parties
+subtitle: As a former member of the <span style="color: #0075EB;">**VRP**</span>, Bauser can help imporove our relationships with the other minor bourgeois parties. 
+choose-if: advisor_action_timer = 0
+unavailable-subtitle: [? if advisor_action_timer > 0 : [+ advisor_action_timer +] months before next advisor action. ?]
+on-arrival: advisor_action_timer = 6; wp_relation += 4*(1-dissent); dbp_relation += 4*(1-dissent); cnblp_relation += 4*(1-dissent)
+
+@raise_interest_rates
+title: Raise interest rates.
+subtitle: Bauser supports raise interests rates to deflate.
+choose-if: reichsbank_president_party = dvp_name
+unavailable-subtitle: We do not control the Reichsbank.
+on-arrival: economic_growth -= 0.8 if inflation < 0; economic_growth -= 0.4; inflation -= 1.5; unemployed += 0.5;
+
+We have lowered the money supply, lowering inflation at the cost of employment and growth. [? if inflation < 0: As our currency is deflating, Germans are refusing to spend their currency so it can accumulate value, which further harms the economy. ?]
+
+on-arrival: economic_growth += 0.5; economic_growth += 0.3 if gold_standard = 0; inflation += 1; unemployed -= 1;
+
+We have expanded the money supply, increasing economic growth, employment, and inflation. [? if gold_standard: The need to maintain parity with gold has decreased the efficiency of our actions. ?]
+
