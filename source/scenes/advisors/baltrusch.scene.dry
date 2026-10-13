@@ -11,7 +11,7 @@ Friedrich Baltrusch is one of the leaders of the Young German Order and a close 
 
 - @organizing
 - @union_unity
-- @Improve_relations_center
+- @improve_relations_center
 - @root: Return to main
 
 @organizing
@@ -32,7 +32,7 @@ on-arrival: advisor_action_timer = 6; labor_strength += 10; labor_dissent -= 8; 
 
 We have reduced tensions with the Labor faction, and increased its strength in the party.
 
-@Improve_relations_center
+@improve_relations_center
 title: <span style="color: #000000;">**Center Party**</span> relations
 subtitle: Improve our relations with the <span style="color: #000000;">**Center Party**</span>.
 choose-if: advisor_action_timer <= 0
