@@ -24,9 +24,9 @@ WIP.
 @wp
 view-if: wp_exist
 
-WIP
+The <span style="color: #B8996F;">**Economic Party**</span> has become steadily more conservative over the years.
 
-- @wp_dnf: The <span style="color: #B8996F;">**Economic Party**</span> unites with <span style="color: #003755;">**DNF**</span>!
+- @wp_dnf: Thec<span style="color: #B8996F;">**Economic Party**</span> unites with <span style="color: #003755;">**DNF**</span>!
 - @wp_dnvp: The <span style="color: #B8996F;">**Economic Party**</span> unites with <span style="color: #3F7BC1;">**DNVP**</span>!
 
 @wp_dnf
@@ -100,9 +100,9 @@ The <span style="color: #B8996F;">**WP**</span> has decided to unite with the <s
 @cnblp
 view-if: cnblp_exist
 
-WIP
+The <span style="color: #7FCEB1;">**CNBLP**</span> is a splinter party of the <span style="color: #3F7BC1;">**DNVP**</span>. However, it looks like it cannot survive any longer.
 
-- @cnblp_dnvp: The <span style="color: #7FCEB1;">**CNBLP**</span> unites with <span style="color: #3F7BC1;">**DNVP**</span>!
+- @cnblp_dnvp: The <span style="color: #7FCEB1;">**CNBLP**</span> returns to the <span style="color: #3F7BC1;">**DNVP**</span>!
   
 
 @cnblp_dnvp
@@ -127,7 +127,7 @@ The <span style="color: #7FCEB1;">**CNBLP**</span> has decided to unite with the
 @vrp
 view-if: vrp_exist
 
-WIP
+The <span style="color: #0075EB;">**VRP**</span> is a tiny party, standing no chance of surviving on its own.
 
 - @vrp_ddp: The <span style="color: #0075EB;">**VRP**</span> unites with <span style="color: #DCCA4A;">**[+ddp_name+]**</span>!
 - @vrp_dnvp: The <span style="color: #0075EB;">**VRP**</span> unites with <span style="color: #3F7BC1;">**DNVP**</span>!
