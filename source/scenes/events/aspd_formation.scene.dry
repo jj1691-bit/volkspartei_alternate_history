@@ -16,11 +16,11 @@ With the decline of the Nazis, nationalist workers have been looking for a place
 on-arrival: aspd_leader = "Heldt"
 go-to: aspd_formed
 
-Max Heldt, minster-president of Saxony has won the leadership election. He will lead the <span style="color: #FE9E00;">**ASPD**</span> on a modearte course, even accecpting cooperation with the <span style="color: #E3000F;">**SPD**</span> on economic matters, while maintaining a nationalist stance on abroad.
+Max Heldt, minster-president of Saxony has won the leadership election. He will lead the <span style="color: #FE9E00;">**ASPD**</span> on a moderate course, even accecpting cooperation with the <span style="color: #E3000F;">**SPD**</span> on economic matters, while maintaining a nationalist stance on abroad.
 
 
 @niekisch
 on-arrival: aspd_leader = "Niekisch"
 go-to: aspd_formed
 
-WIP
+Ernst Niekisch has been elected chairman of the <span style="color: #FE9E00;">**ASPD**</span>, bringing into the party a bizarre mix of Nazism and Communism. This makes cooperation with them extremely difficult.
